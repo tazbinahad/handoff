@@ -1,0 +1,122 @@
+@media screen and (max-width: 1199px) {
+
+    /* Header */
+    .main-header .navbar form {
+        display: none;
+    }
+    /* Dropdown */
+    .custom-dropdown .dropdown-title {
+        font-size: 14px;
+    }
+    .custom-dropdown .dropdown-item {
+        font-size: 14px;
+    }
+    .custom-dropdown {
+        padding: 16px 20px 32px 20px;
+        left: 10%;
+        top: 90%;
+    }
+    /* Working process */
+    .single-process-item h4 {
+        font-size: 20px;
+    }
+
+    .single-process-item p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-wrapper .row {
+        flex-wrap: wrap;
+    }
+
+    .footer-wrapper .row .col-lg-2:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .footer-wrapper .row .col-lg-2:nth-child(3) {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Footer */
+    .footer-area {
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    li a {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .single-footer-items {
+        padding-bottom: 30px;
+    }
+
+    .footer-area .bottom-footer {
+        padding-top: 10px;
+    }
+
+    .footer-wrapper .row {
+        justify-content: space-between;
+    }
+
+    .footer-area .bottom-footer .social-share a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .footer-area .bottom-footer .social-share a img {
+        max-width: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* working-process-area */
+    .single-process-item img {
+        width: 25%;
+    }
+    .single-process-item h4 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer-area .bottom-footer .bottom-left li {
+        padding-right: 25px;
+    }
+    .footer-area .bottom-footer .social-share a {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .footer-area .bottom-footer .bottom-left li {
+        padding-right: 5px;
+    }
+    .footer-area .bottom-footer {
+        justify-content: center;
+    }
+    .footer-area .bottom-footer .bottom-left {
+        justify-content: center;
+    }
+    .footer-area .bottom-footer .social-share{
+        padding-top: 10px;
+    }
+
+}
+@media screen and (max-width: 426px){
+    .working-process-area .col-es-6 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .single-process-item img {
+        width: 20%;
+    }
+}
