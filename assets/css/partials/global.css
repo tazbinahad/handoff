@@ -76,6 +76,20 @@ input:focus {
 
 
 /* Global classes */
+.hero-button {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 16px;
+    background: #442F8B;
+    color: var(--white);
+    border-radius: 8px;
+    max-width: 175px;
+}
+.hero-button:hover{
+    background: transparent;
+    color: #442F8B;
+    border: 1px solid #442F8B;
+}
 .primary-button {
     font-weight: bold;
     font-size: 16px;

@@ -117,17 +117,6 @@ span.search-icon {
 }
 
 /* Hero section */
-.hero-slider{
-    /* transition: .5s ease all; */
-}
-.hero-button {
-    font-weight: 500;
-    font-size: 20px;
-    padding: 8px 16px;
-    background: #442F8B;
-    color: var(--white);
-    max-width: 175px;
-}
 .hero-slider .single-slider .slider-content {
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -136,7 +125,7 @@ span.search-icon {
     justify-content: center;
     padding: 74px 10%;
     padding-top: 90px;
-    min-height: 400px;
+    height: 400px;
     position: relative;
     z-index: 1;
 }
