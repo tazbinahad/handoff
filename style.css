@@ -201,8 +201,14 @@ span.search-icon {
 }
 
 /* Offers section */
+.offer-section{
+    padding-top: 80px;
+}
 .offers .offer-heading p {
+    padding-top: 20px;
+    padding-bottom: 80px;
     max-width: 765px;
+    line-height: normal;
 }
 
 /* working-process-area  */
