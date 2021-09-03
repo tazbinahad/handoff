@@ -4,6 +4,23 @@
 
 
 /* 01. Header */
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffff;
+    padding-top: 0;
+    z-index: 999;
+}
+.hidden{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.header-area{
+    background: #fff;
+}
 .top-header {
     box-shadow: inset 0px -0.5px 0px #442F8B;
 }
@@ -33,6 +50,7 @@
 
 .main-header {
     padding-top: 14px;
+    transition: .3s ease;
 }
 
 .main-header .navbar {
@@ -90,6 +108,7 @@ span.search-icon {
     color: #160E2B;
     padding: .25rem 1.5rem;
 }
+
 .custom-dropdown .dropdown-item {
     font-weight: bold;
     font-size: 16px;
@@ -97,14 +116,112 @@ span.search-icon {
     padding-bottom: 5px;
 }
 
+/* Hero section */
+.hero-slider{
+    /* transition: .5s ease all; */
+}
+.hero-button {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 16px;
+    background: #442F8B;
+    color: var(--white);
+    max-width: 175px;
+}
+.hero-slider .single-slider .slider-content {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 74px 10%;
+    padding-top: 90px;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.hero-slider .single-slider .slider-content::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+/* Changing background images and color */
+.hero-slider .single-slider .slider-content.s1{
+    background: url("assets/img/home/hero/aeroporto.png");
+}
+.hero-slider .single-slider .slider-content.s1::before{
+    background-color: #442F8BD1;
+}
+.hero-slider .single-slider .slider-content.s2{
+    background: url("assets/img/home/hero/aeroporto.png");
+}
+.hero-slider .single-slider .slider-content.s2::before{
+    background-color: #e9ecef;
+}
 
+
+.hero-slider .single-slider h6 {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white);
+    max-width: 360px;
+}
+.hero-slider .single-slider h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--white);
+    max-width: 780px;
+}
+.hero-slider .single-slider p {
+    font-weight: normal;
+    font-size: 24px;
+    color: var(--white);
+    max-width: 785px;
+}
+.slider-content.s2 h6,
+.slider-content.s2 h1,
+.slider-content.s2 p {
+    color: var(--primary);
+}
+
+/* slick arrows */
+.hero-slider .slick-arrow {
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-slider .slick-arrow:before {
+    font-size: 40px;
+    color: #fff;
+}
+
+.hero-slider .slick-prev {
+    left: 60px;
+    z-index: 1;
+}
+
+.hero-slider .slick-next {
+    right: 60px;
+    z-index: 1;
+}
+
+/* Offers section */
+.offers .offer-heading p {
+    max-width: 765px;
+}
 
 /* working-process-area  */
 .working-process-area {
     margin-top: 50rem;
     padding: 50PX 0;
-    box-shadow: 0px -1px 0px rgba(68, 47, 139, 0.5), 
-                0px 1px 0px rgba(68, 47, 139, 0.5);
+    box-shadow: 0px -1px 0px rgba(68, 47, 139, 0.5),
+        0px 1px 0px rgba(68, 47, 139, 0.5);
 }
 
 .single-process-item h4 {
@@ -127,6 +244,7 @@ span.search-icon {
 .footer-area {
     overflow: hidden;
 }
+
 .footer-wrapper .single-footer-items h3 {
     font-weight: 700;
     font-size: 18px;
@@ -149,21 +267,26 @@ span.search-icon {
     border: 1px solid #3C42571F;
     box-shadow: 0px 1px 1px 0px #0000000A;
 }
+
 .footer-wrapper .row {
     flex-wrap: nowrap;
 }
+
 .footer-wrapper .row .col-lg-2:nth-child(2) {
     margin-left: 1rem;
 }
+
 .footer-wrapper .row .col-lg-2:nth-child(3) {
     margin-left: 5rem;
 }
+
 .single-footer-items .items li {
     font-size: 16px;
     line-height: 100%;
     color: #000000;
     padding-bottom: 10px;
 }
+
 /* Bottom footer */
 .footer-area .bottom-footer {
     display: flex;
@@ -171,20 +294,25 @@ span.search-icon {
     flex-wrap: wrap;
     align-items: center;
 }
+
 .footer-area .bottom-footer .bottom-left {
     display: flex;
     flex-wrap: wrap;
 }
-.footer-area .bottom-footer .bottom-left li{
+
+.footer-area .bottom-footer .bottom-left li {
     padding-right: 40px;
 }
+
 .footer-area .bottom-footer .social-share a {
     margin-left: 30px;
 }
+
 .footer-area .copyright p {
     font-size: 12px;
     color: var(--black);
 }
+
 .footer-area .copyright p {
     font-size: 12px;
     color: var(--black);

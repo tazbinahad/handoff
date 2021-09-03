@@ -93,6 +93,17 @@ input:focus {
     color: var(--text-color);
 }
 
+.section-heading h2 {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--primary);
+}
+.section-heading p {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--black);
+}
+
 /* Override Bootstrap class */
 .container-fluid {
     padding-left: 40px !important;
