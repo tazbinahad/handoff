@@ -5,10 +5,12 @@ $(document).ready(function () {
       $('.header-area').addClass('fixed-header');
       $('.hero-slider').addClass('mt-150');
       $('.top-header').addClass('hidden');
+      $('.main-header').addClass('pt-0');
     } else {
       $('.header-area').removeClass('fixed-header');
       $('.hero-slider').removeClass('mt-150');
       $('.top-header').removeClass('hidden');
+      $('.main-header').removeClass('pt-0');
 
     }
   });
