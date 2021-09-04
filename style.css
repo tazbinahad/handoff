@@ -381,9 +381,48 @@ span.search-icon {
     background-image: url("assets/img/home/catagories-section/category6.png");
 
 }
-
-
-
+/* storecard-section */
+.storecard-section {
+    padding: 100px 0;
+}
+.extra-process {
+    display: flex;
+    justify-content: space-evenly;
+}
+.storecard-section .store-card {
+    background: #FFFFFF;
+    box-shadow: -4px 12px 18px rgba(0, 0, 0, 0.1), 4px 12px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 40px 70px;
+}
+.storecard-section .store-card a {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.extra-process li {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    max-width: 265px;
+}
+.extra-process li .icon{
+    margin-right: 16px;
+}
+.extra-process li .icon i {
+    border: 1px solid #442F8B;
+    border-radius: 50%;
+    padding: 5px;
+}
+.storecard-heading p {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--black);
+    padding-bottom: 15px;
+}
 
 
 
