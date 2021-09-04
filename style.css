@@ -72,13 +72,16 @@
 .main-header .navbar ul li {
     padding-right: 10px;
 }
-.main-header .navbar ul li a{
+
+.main-header .navbar ul li a {
     color: #555457 !important;
     font-weight: 700;
 }
-.main-header .navbar ul li.active a{
+
+.main-header .navbar ul li.active a {
     color: var(--primary) !important;
-}   
+}
+
 .main-header .navbar form input {
     border: none;
     color: #000000;
@@ -256,9 +259,10 @@ span.search-icon {
 }
 
 /* galary */
-.gallery .single-product{
+.gallery .single-product {
     max-width: 322px;
 }
+
 .gallery .single-product h4 {
     font-weight: 800;
     font-size: 16px;
@@ -308,6 +312,83 @@ span.search-icon {
         transform: scale(1);
     }
 }
+
+/* Expolore section */
+.explore-section {
+    padding-top: 80px;
+}
+
+.explore .explore-heading p {
+    padding: 15px 0;
+}
+
+.explore-catagory .single-catagory {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: -1;
+}
+.explore-catagory .single-catagory::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    opacity: 0.8;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    background: #442F8BD1;
+    z-index: -1;
+
+}
+.explore-catagory .single-catagory h6 {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--white);
+}
+/* Modify bootstrap colum for this secion */
+.explore-catagory .col-lg-4 {
+    max-width: 30%;
+}
+.explore-catagory .catagory-1 {
+    background-image: url("assets/img/home/catagories-section/category1.png");
+
+}
+.explore-catagory .catagory-2 {
+    background-image: url("assets/img/home/catagories-section/category2.png");
+
+}
+.explore-catagory .catagory-3 {
+    background-image: url("assets/img/home/catagories-section/category3.png");
+
+}
+.explore-catagory .catagory-4 {
+    background-image: url("assets/img/home/catagories-section/category4.png");
+
+}
+.explore-catagory .catagory-5 {
+    background-image: url("assets/img/home/catagories-section/category5.png");
+
+}
+.explore-catagory .catagory-6 {
+    background-image: url("assets/img/home/catagories-section/category6.png");
+
+}
+
+
+
+
+
+
+
+
 
 /* working-process-area  */
 .working-process-area {

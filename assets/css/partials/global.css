@@ -79,6 +79,17 @@ input:focus {
 
 
 /* Global classes */
+.section-heading h2 {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--primary);
+}
+.section-heading p {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--black);
+}
+/* Button Clasess */
 .hero-button {
     font-weight: 500;
     font-size: 20px;
@@ -109,17 +120,21 @@ input:focus {
     border: 1px solid #442F8B;
     color: var(--text-color);
 }
-
-.section-heading h2 {
-    font-weight: 800;
-    font-size: 40px;
+.see-more-btn {
+    font-weight: 700;
+    font-size: 18px;
     color: var(--primary);
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    transition: .5s ease-in-out;
 }
-.section-heading p {
-    font-weight: 800;
-    font-size: 24px;
+.see-more-btn:hover{
+    text-decoration: underline;
     color: var(--black);
 }
+
 
 /* Override Bootstrap class */
 .container-fluid {

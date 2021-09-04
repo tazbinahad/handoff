@@ -4,18 +4,22 @@
     .main-header .navbar form {
         display: none;
     }
+
     /* Dropdown */
     .custom-dropdown .dropdown-title {
         font-size: 14px;
     }
+
     .custom-dropdown .dropdown-item {
         font-size: 14px;
     }
+
     .custom-dropdown {
         padding: 16px 20px 32px 20px;
         left: 10%;
         top: 90%;
     }
+
     /* Working process */
     .single-process-item h4 {
         font-size: 20px;
@@ -23,6 +27,15 @@
 
     .single-process-item p {
         font-size: 14px;
+    }
+
+    /* Expolore section */
+    .explore-catagory .col-lg-4 {
+        max-width: inherit;
+    }
+    .explore-catagory .single-catagory {
+        width: 290px;
+        height: 290px;
     }
 
     /* Footer */
@@ -53,6 +66,17 @@
         font-size: 14px;
     }
 
+
+        /* Expolore section */
+        .explore-catagory .col-lg-4 {
+            max-width: inherit;
+        }
+        .explore-catagory .single-catagory {
+            width: 320px;
+            height: 320px;
+            margin-bottom: 40px;
+        }
+
     /* Footer */
     .single-footer-items {
         padding-bottom: 30px;
@@ -75,11 +99,14 @@
         max-width: 30px;
     }
 }
+
 @media screen and (max-width: 767px) {
+
     /* working-process-area */
     .single-process-item img {
         width: 25%;
     }
+
     .single-process-item h4 {
         font-size: 18px;
     }
@@ -88,34 +115,42 @@
     .footer-area .bottom-footer .bottom-left li {
         padding-right: 25px;
     }
+
     .footer-area .bottom-footer .social-share a {
         margin-left: 10px;
         margin-right: 0;
     }
+
     .copyright {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 575px) {
     .footer-area .bottom-footer .bottom-left li {
         padding-right: 5px;
     }
+
     .footer-area .bottom-footer {
         justify-content: center;
     }
+
     .footer-area .bottom-footer .bottom-left {
         justify-content: center;
     }
-    .footer-area .bottom-footer .social-share{
+
+    .footer-area .bottom-footer .social-share {
         padding-top: 10px;
     }
 
 }
-@media screen and (max-width: 426px){
+
+@media screen and (max-width: 426px) {
     .working-process-area .col-es-6 {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
     .single-process-item img {
         width: 20%;
     }
