@@ -3,12 +3,12 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
       $('.header-area').addClass('fixed-header');
-      $('.hero-slider').addClass('mt-150');
+      // $('.top-header').addClass('hide');
       $('.top-header').addClass('hidden');
       $('.main-header').addClass('pt-0');
     } else {
       $('.header-area').removeClass('fixed-header');
-      $('.hero-slider').removeClass('mt-150');
+      // $('main').removeClass('mt-150');
       $('.top-header').removeClass('hidden');
       $('.main-header').removeClass('pt-0');
 

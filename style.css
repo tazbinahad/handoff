@@ -15,22 +15,32 @@
 }
 
 .hidden {
-    height: 0;
+    height: 0px !important;
     opacity: 0;
     visibility: hidden;
 }
 
-.header-area {
+/* .header-area {
     background: #fff;
     opacity: 0.95;
     box-shadow: var(--medium-shadow);
     position: relative;
     z-index: 999;
+} */
+.header-area {
+    background: #fff;
+    opacity: 0.95;
+    box-shadow: var(--medium-shadow);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-
 .top-header {
     box-shadow: inset 0px -0.5px 0px #442F8B;
-
+    height: 48px;
+    transition: .3s ease-in-out all;
 }
 
 .top-header .top-header-content {
@@ -134,6 +144,9 @@ span.search-icon {
 }
 
 /* Hero section */
+.hero-slider{
+    margin-top: 152px;
+}
 .hero-slider .single-slider .slider-content {
     background-repeat: no-repeat !important;
     background-size: cover !important;

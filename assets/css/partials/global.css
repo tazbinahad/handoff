@@ -58,6 +58,9 @@ body {
     margin: 0 auto;
     overflow-x: hidden !important;
 }
+section{
+    overflow: hidden;
+}
 img{
     max-width: 100%;
 }
