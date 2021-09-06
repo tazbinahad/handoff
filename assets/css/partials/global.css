@@ -58,6 +58,9 @@ body {
     margin: 0 auto;
     overflow-x: hidden !important;
 }
+main{
+    margin-top: 152px;
+}
 section{
     overflow: hidden;
 }

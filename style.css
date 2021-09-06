@@ -144,9 +144,6 @@ span.search-icon {
 }
 
 /* Hero section */
-.hero-slider{
-    margin-top: 152px;
-}
 .hero-slider .single-slider .slider-content {
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -462,6 +459,159 @@ span.search-icon {
     line-height: normal;
     color: #160E2B;
 }
+/* ------------------------
+Page: Lojas
+--------------------------- */
+
+
+/* lojas heading section */
+.lojas-heading-area .heading h6 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    color: var(--black);
+}
+.lojas-heading-area .heading h1 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: normal;
+    margin-bottom: -10px !important;
+    color: var(--black);
+}
+.lojas-heading-area .heading p {
+    font-size: 24px;
+    color: var(--black);
+    line-height: normal;
+    max-width: 645px;
+}
+/* Lojas Product section */
+.lojas-product-section {
+    padding-top: 120px;
+}
+.lojas-product .product-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lojas-product .product-items form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.lojas-product .product-items form .form-group select {
+    color: #442F8B;
+    border: none;
+    padding: 0;
+    font-weight: 700;
+}
+.lojas-product .product-items .showing-products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.lojas-product .product-items form .form-group {
+    margin-right: 100px;
+}
+.lojas-product .product-items .showing-products .showing {
+    margin-left: 100px;
+}
+.lojas-product .product-items form .form-group select option {
+    color: #442F8B;
+    padding-bottom: 10px;
+    border: none;
+}
+.lojas-product .product-items .showing-products .showing h6 {
+    font-size: 16px;
+    color: var(--black);
+}
+.lojas-product .product-items .showing-products .product-count h6 {
+    font-size: 16px;
+    color: var(--black);
+}
+.lojas-product .product-items .showing-products .product-count h6 > span {
+    font-weight: 700;
+}
+.lojas-product .product-items .showing-products .product-pagination h6 span {
+    margin-left: 8px;
+}
+.lojas-product .product-items .showing-products .product-pagination h6 span.selected {
+    color: var(--primary);
+}
+
+/* Single-product */
+.lojas-product .product-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.lojas-product .product-content .single-product {
+    max-width: 320px;
+    margin-bottom: 53px;
+}
+.lojas-product .product-content .single-product .images {
+    position: relative;
+    text-align: center;
+    max-height: 322px;
+}
+
+.lojas-product .product-content .single-product .images .image {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    height: 90px;
+    width: 90px;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #fff;
+}
+
+.lojas-product .product-content .single-product .single-product-content {
+    text-align: center;
+}
+.lojas-product .product-content .single-product .single-product-content .ability {
+    display: flex;
+    justify-content: space-evenly;
+}
+.lojas-product .product-content .single-product .single-product-content h3 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #160E2B;
+    padding-top: 13px;
+}
+.lojas-product .product-content .single-product .single-product-content .ability .selling h6 {
+    font-weight: 700;
+    font-size: 16px;
+}
+.lojas-product .product-content .single-product .single-product-content .ability .selling p {
+    font-size: 16px;
+    color: var(--black);
+}
+.lojas-product .product-content .single-product .single-product-content .ability .sold h6 {
+    font-weight: 700;
+    font-size: 16px;
+}
+.lojas-product .product-content .single-product .single-product-content .ability .sold p {
+    font-size: 16px;
+    color: var(--black);
+}
+.lojas-product .product-content .single-product .single-product-content a {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
