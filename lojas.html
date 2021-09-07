@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Lojas</title>
@@ -170,22 +169,222 @@
                     <div class="product-items">
                         <form action="">
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>FILTRO</option>
-                                    <option>FILTRO2</option>
-                                    <option>FILTRO3</option>
-                                    <option>FILTRO4</option>
-                                    <option>FILTRO5</option>
-                                </select>
+                                <div class="dropdown filter-product">
+                                    <i class="fa fa-filter" aria-hidden="true"></i>
+                                    <button id="product-button" class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        FILTRO
+                                    </button>
+                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuButton">
+                                        <div class="row justify-content-start">
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Marcas</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="MarcasCheck1">
+                                                    <label class="form-check-label" for="MarcasCheck1">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="MarcasCheck2">
+                                                    <label class="form-check-label" for="MarcasCheck2">
+                                                        Sestini <span>(3)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="MarcasCheck3">
+                                                    <label class="form-check-label" for="MarcasCheck3">
+                                                        Dakota <span>(3)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="MarcasCheck4">
+                                                    <label class="form-check-label" for="MarcasCheck4">
+                                                        Fiero <span>(4)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Tamanho</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="tamanho1" value="option1" checked>
+                                                    <label class="form-check-label" for="tamanho1">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="tamanho2" value="option1" checked>
+                                                    <label class="form-check-label" for="tamanho2">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="tamanho3" value="option1" >
+                                                    <label class="form-check-label" for="tamanho3">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="tamanho4" value="option1" >
+                                                    <label class="form-check-label" for="tamanho4">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Estado de eso</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="estado1">
+                                                    <label class="form-check-label" for="estado1">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="estado2">
+                                                    <label class="form-check-label" for="estado2">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="estado3">
+                                                    <label class="form-check-label" for="estado3">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Disconto</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="disconto1" value="option1" checked>
+                                                    <label class="form-check-label" for="disconto1">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="disconto2" value="option1" checked>
+                                                    <label class="form-check-label" for="disconto2">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="disconto3" value="option1" checked>
+                                                    <label class="form-check-label" for="disconto3">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Esito</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="esito1">
+                                                    <label class="form-check-label" for="esito1">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="esito2">
+                                                    <label class="form-check-label" for="esito2">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="esito3">
+                                                    <label class="form-check-label" for="esito3">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="esito4">
+                                                    <label class="form-check-label" for="esito4">
+                                                        Fiero <span>(5)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                                <h3 class="dropdown-title">Destino</h3>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino1" value="option1" checked>
+                                                    <label class="form-check-label" for="destino1">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino2" value="option1" checked>
+                                                    <label class="form-check-label" for="destino2">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino3" value="option1" checked>
+                                                    <label class="form-check-label" for="destino3">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino4" value="option1" checked>
+                                                    <label class="form-check-label" for="destino4">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino5" value="option1" checked>
+                                                    <label class="form-check-label" for="destino5">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="exampleRadios"
+                                                        id="destino6" value="option1" checked>
+                                                    <label class="form-check-label" for="destino6">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cross">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                            Tazbin
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>RELEVÂNCIA</option>
-                                    <option>RELEVÂNCIA2</option>
-                                    <option>RELEVÂNCIA3</option>
-                                    <option>RELEVÂNCIA4</option>
-                                    <option>RELEVÂNCIA5</option>
-                                </select>
+                                <div class="dropdown filter-product relevent">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        RELEVÂNCIA
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">RELEVÂNCIA1</a>
+                                        <a class="dropdown-item" href="#">RELEVÂNCIA2</a>
+                                        <a class="dropdown-item" href="#">RELEVÂNCIA3</a>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                         <div class="showing-products">
@@ -216,12 +415,14 @@
                                 <div class="bg-image">
                                     <img src="assets/img/lojas/product/bg-1.png" alt="">
                                 </div>
+
+                            </div>
+                            <div class="single-product-content">
                                 <div class="image">
                                     <img src="assets/img/lojas/product/image1.png" alt="">
                                 </div>
-                            </div>
-                            <div class="single-product-content">
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -238,14 +439,16 @@
                         <div class="single-product">
                             <div class="images">
                                 <div class="bg-image">
-                                    <img src="assets/img/lojas/product/bg-1.png" alt="">
+                                    <img src="assets/img/lojas/product/bg-2.png" alt="">
                                 </div>
-                                <div class="image">
-                                    <img src="assets/img/lojas/product/image1.png" alt="">
-                                </div>
+
                             </div>
                             <div class="single-product-content">
+                                <div class="image">
+                                    <img src="assets/img/lojas/product/image2.png" alt="">
+                                </div>
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -262,14 +465,16 @@
                         <div class="single-product">
                             <div class="images">
                                 <div class="bg-image">
-                                    <img src="assets/img/lojas/product/bg-1.png" alt="">
+                                    <img src="assets/img/lojas/product/bg-3.png" alt="">
                                 </div>
-                                <div class="image">
-                                    <img src="assets/img/lojas/product/image1.png" alt="">
-                                </div>
+
                             </div>
                             <div class="single-product-content">
+                                <div class="image">
+                                    <img src="assets/img/lojas/product/image3.png" alt="">
+                                </div>
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -286,14 +491,16 @@
                         <div class="single-product">
                             <div class="images">
                                 <div class="bg-image">
-                                    <img src="assets/img/lojas/product/bg-1.png" alt="">
+                                    <img src="assets/img/lojas/product/bg-4.png" alt="">
                                 </div>
-                                <div class="image">
-                                    <img src="assets/img/lojas/product/image1.png" alt="">
-                                </div>
+
                             </div>
                             <div class="single-product-content">
+                                <div class="image">
+                                    <img src="assets/img/lojas/product/image4.png" alt="">
+                                </div>
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -310,14 +517,16 @@
                         <div class="single-product">
                             <div class="images">
                                 <div class="bg-image">
-                                    <img src="assets/img/lojas/product/bg-1.png" alt="">
+                                    <img src="assets/img/lojas/product/bg-5.png" alt="">
                                 </div>
-                                <div class="image">
-                                    <img src="assets/img/lojas/product/image1.png" alt="">
-                                </div>
+
                             </div>
                             <div class="single-product-content">
+                                <div class="image">
+                                    <img src="assets/img/lojas/product/image5.png" alt="">
+                                </div>
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -334,14 +543,16 @@
                         <div class="single-product">
                             <div class="images">
                                 <div class="bg-image">
-                                    <img src="assets/img/lojas/product/bg-1.png" alt="">
+                                    <img src="assets/img/lojas/product/bg-6.png" alt="">
                                 </div>
-                                <div class="image">
-                                    <img src="assets/img/lojas/product/image1.png" alt="">
-                                </div>
+
                             </div>
                             <div class="single-product-content">
+                                <div class="image">
+                                    <img src="assets/img/lojas/product/image6.png" alt="">
+                                </div>
                                 <h3>Karina</h3>
+                                <h3 class="hidden-content">10 seguidoris</h3>
                                 <div class="ability">
                                     <div class="selling">
                                         <h6>itens à venda</h6>
@@ -360,7 +571,7 @@
             </div>
         </section>
         <!-- ============End Lojas Product section -->
-        
+
         <!-- ============Start storecard-section============== -->
         <section class="storecard-section">
             <div class="container">
