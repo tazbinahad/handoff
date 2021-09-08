@@ -54,6 +54,28 @@
 }
 
 @media screen and (max-width: 1024px) {
+    /* Header */
+    .header-right-content, .header-right-content .icon-list>div{
+        padding-bottom: 15px;
+    }
+    .header-right-content, .header-right-content .icon-list>div {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    /* storecard-section */
+    .section-heading h2 {
+        font-size: 36px;
+    }
+    .storecard-heading p {
+        font-size: 20px;
+    }
+    .extra-process li {
+        font-size: 20px;
+    }
+    /* working-process-area */
+    .single-process-item p {
+        font-size: 13px;
+    }
 
     /* Footer */
     .footer-area {
@@ -100,8 +122,36 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 769px) {
+    /* hero-slider */
+    .hero-slider .slick-prev {
+        left: 30px;
+    }
+    .hero-slider .slick-next {
+        right: 30px;
+    }
+    .hero-slider .single-slider h6 {
+        font-size: 14px;
+    }
+    .hero-slider .single-slider h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    .hero-slider .single-slider p {
+        font-size: 18px;
+    }
+    /* Section Heading */
+    .section-heading h2 {
+        font-size: 28px;
+    }
+    .section-heading p {
+        font-size: 20px;
+        padding-top: 0 !important;
+    }
+    /* storecard-section */
+    .extra-process li {
+        font-size: 15px;
+    }
     /* working-process-area */
     .single-process-item img {
         width: 25%;
@@ -123,6 +173,21 @@
 
     .copyright {
         text-align: center;
+    }
+
+    /* Lojas Page */
+    /* Heading */
+    .lojas-heading-area .heading h1 {
+        font-size: 50px;
+    }
+    .lojas-heading-area .heading p {
+        font-size: 20px;
+    }
+    /* Single User */
+    .user-details-section .users {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -146,6 +211,44 @@
 }
 
 @media screen and (max-width: 426px) {
+    /* Hero Section */
+    .hero-slider .slick-arrow{
+        display: none;
+    }
+    .hero-slider .single-slider h1 {
+        font-size: 35px;
+        line-height: normal;
+    }
+    /* offer section */
+    .offer-product-slider {
+        flex-wrap: wrap;
+    }
+    /* Card */
+    .storecard-section .store-card {
+        padding: 30px 30px;
+    }
+    .extra-process {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .extra-process li {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    /* Lojas Page */
+    /* Product */
+    .lojas-product .product-items {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .lojas-product .product-items form .form-group {
+        margin-right: 0px;
+    }
+    .lojas-product .product-items .showing-products .showing {
+        margin-left: 0px;
+    }
     .working-process-area .col-es-6 {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -153,5 +256,22 @@
 
     .single-process-item img {
         width: 20%;
+    }
+
+
+    /* Single User */
+    .service-process {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service-process .process {
+        margin: 10px 0;
+    }
+    .where-we-are {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .where-we-are .me {
+        margin: 18px 0px;
     }
 }

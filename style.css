@@ -128,6 +128,8 @@ span.search-icon {
     padding: 16px 40px 32px 40px;
     left: 15%;
     top: 90%;
+    max-height:500px;
+    overflow-y: scroll;
 }
 
 .custom-dropdown .dropdown-title {
@@ -931,7 +933,9 @@ Page: Lojas
 .user-details-section .users {
     display: flex;
 }
-
+.users .user-details{
+    max-width: 100%;
+}
 
 .users .user-details h5{
     font-size: 24px;
@@ -1068,6 +1072,14 @@ Page: Lojas
 }
 
 
+.pagination{
+    justify-content: center;
+}
+.pagination li a{
+    border: none;
+    font-size: 16px;
+    color: var(--black);
+}
 
 
 
