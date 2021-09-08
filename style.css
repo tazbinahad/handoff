@@ -1,3 +1,47 @@
+/*==================================
+* Author        : "iBOS"
+* Template Name : iBOS  HTML Template
+* Version       : 1.0
+==================================== */
+
+/*=========== TABLE OF CONTENTS ===========
+Page: Home
+------------------------- 
+01. Header
+02. Hero section
+03. Offers section
+04. Expolore section
+05. storecard-section
+06. working-process-area
+
+
+Page: Lojas
+-------------------------
+07. lojas heading section
+08. Lojas Product section
+09. Single-product
+
+
+Page: Single Product
+-------------------------
+10. single-product-area
+
+
+Page: Single Users
+-------------------------
+11. single-product-area
+12. User Details
+
+Page: footer
+-------------------------
+13. Footer area
+
+
+
+
+
+*/
+
 @import url("assets/css/partials/default.css");
 @import url("assets/css/partials/global.css");
 
@@ -146,7 +190,7 @@ span.search-icon {
     padding-bottom: 5px;
 }
 
-/* Hero section */
+/* 02. Hero section */
 .hero-slider .single-slider .slider-content {
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -238,7 +282,7 @@ span.search-icon {
     z-index: 1;
 }
 
-/* Offers section */
+/* 03. Offers section */
 .offer-section {
     padding-top: 80px;
 }
@@ -249,9 +293,6 @@ span.search-icon {
     line-height: normal;
 }
 
-/* Import from ibos */
-/* case-portfolio */
-.case-portfolio-section {}
 
 /* filter nav */
 .offer-product-slider {
@@ -355,7 +396,7 @@ span.search-icon {
     }
 }
 
-/* Expolore section */
+/* 04. Expolore section */
 .explore-section {
     padding-top: 80px;
 }
@@ -434,7 +475,7 @@ span.search-icon {
 
 }
 
-/* storecard-section */
+/* 05. storecard-section */
 .storecard-section {
     padding: 100px 0;
 }
@@ -489,7 +530,7 @@ span.search-icon {
 
 
 
-/* working-process-area  */
+/* 06. working-process-area  */
 .working-process-area {
     margin-top: 120px;
     padding: 50PX 0;
@@ -515,7 +556,7 @@ Page: Lojas
 --------------------------- */
 
 
-/* lojas heading section */
+/* 07. lojas heading section */
 .lojas-heading-area .heading h6 {
     font-weight: 700;
     font-size: 16px;
@@ -538,7 +579,7 @@ Page: Lojas
     max-width: 645px;
 }
 
-/* Lojas Product section */
+/* 08. Lojas Product section */
 .lojas-product-section {
     padding-top: 120px;
 }
@@ -667,7 +708,7 @@ Page: Lojas
     color: var(--primary);
 }
 
-/* Single-product */
+/* 09. Single-product */
 .lojas-product .product-content {
     display: flex;
     flex-wrap: wrap;
@@ -791,7 +832,7 @@ Page: Lojas
 /* =================================
 *Single Product page
 ====================================*/
-/* single-product-area */
+/* 10. single-product-area */
 .single-product-image {
     display: flex;
     justify-content: space-between;
@@ -953,7 +994,7 @@ Page: Lojas
 /* ============================
 * Single Users Page
 =============================*/
-/* User Details */
+/* 12. User Details */
 .user-information {
     min-width: 322px;
     margin-right: 24px;
@@ -1117,7 +1158,7 @@ Page: Lojas
 
 
 
-/* Footer area */
+/* 13. Footer area */
 .footer-area {
     overflow: hidden;
 }
