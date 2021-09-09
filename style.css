@@ -162,9 +162,26 @@ span.search-icon {
 .header-right-content .icon-list>div {
     margin-left: 25px;
 }
+.icon-list > div a i{
+    font-size: 26px;
+    color: var(--primary);
+    transition: ease-in-out .3s all;
+}
+.icon-list > div a i:hover{
+    color:#525252;
+}
+/* Search hover */
+.header-right-content .search:hover {
+    animation-name: tazbin;
+    animation-duration: 1s;
+}
 
-.header-right-content .icon-list div a img:hover {
-    filter: saturate(5);
+@keyframes tazbin {
+    0% {opacity: 1;}
+
+    50% {opacity: .3;}
+
+    100% {opacity: 1;}
 }
 
 /* Dropdown */
@@ -172,7 +189,7 @@ span.search-icon {
     padding: 16px 40px 32px 40px;
     left: 15%;
     top: 90%;
-    max-height:500px;
+    max-height: 500px;
     overflow-y: scroll;
 }
 
@@ -318,31 +335,47 @@ span.search-icon {
     cursor: pointer;
     margin: 0 auto;
 }
+
+.single-product .product-image {
+    overflow: hidden;
+}
+
 .single-product .on-hover {
     position: absolute;
-    top: 68%;
+    bottom: -25%;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px 10px;
     background: rgba(255, 255, 255, 0.733);
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s ease-in-out all;
-    
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in-out all;
+    z-index: 1;
 }
-.single-product:hover > .on-hover{
+
+.single-product:hover>.product-image .on-hover {
+    bottom: 0;
     visibility: visible;
     opacity: 1;
 }
+
 .on-hover .text p {
     font-weight: 700;
     margin-bottom: 0;
 }
 
-.slick-track .single-product .on-hover{
+.slick-track .single-product .on-hover {
     display: none;
+}
+.on-hover .icon a i{
+    font-size: 26px;
+    margin-left: 8px;
+    color: var(--primary);
+}
+.on-hover .icon a i:hover{
+    color: #525252;
 }
 
 
@@ -438,11 +471,20 @@ span.search-icon {
     font-weight: 800;
     font-size: 24px;
     color: var(--white);
+    transition: .3s ease-in-out all;
+
 }
 
 /* Modify bootstrap colum for this secion */
 .explore-catagory .col-lg-4 {
     max-width: 30%;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+}
+
+.explore-catagory .col-lg-4:hover>.single-catagory h6 {
+    transform: scale(1.2);
+    text-decoration: underline;
 }
 
 .explore-catagory .catagory-1 {
@@ -1000,14 +1042,16 @@ Page: Lojas
     margin-right: 24px;
 
 }
+
 .user-details-section .users {
     display: flex;
 }
-.users .user-details{
+
+.users .user-details {
     max-width: 100%;
 }
 
-.users .user-details h5{
+.users .user-details h5 {
     font-size: 24px;
     color: var(--black);
     max-width: 782px;
@@ -1026,7 +1070,7 @@ Page: Lojas
     /* justify-content: space-evenly; */
 }
 
-.users .user-details .ability .selling > h6 {
+.users .user-details .ability .selling>h6 {
     font-weight: 700;
     font-size: 16px;
 }
@@ -1036,17 +1080,17 @@ Page: Lojas
     color: var(--black);
 }
 
-.users .user-details .sold > h6 {
+.users .user-details .sold>h6 {
     font-weight: 700;
     font-size: 16px;
 }
 
-.users .user-details .sold > p {
+.users .user-details .sold>p {
     font-size: 16px;
     color: var(--black);
 }
 
-.users .user-details .followers > h6 {
+.users .user-details .followers>h6 {
     font-weight: 700;
     font-size: 16px;
 }
@@ -1070,13 +1114,13 @@ Page: Lojas
     margin-right: 24px;
 }
 
-.users .user-details > h6 {
+.users .user-details>h6 {
     font-size: 16px;
     color: #160E2B;
     padding-top: 20px;
 }
 
-.users .user-details > h6 span {
+.users .user-details>h6 span {
     font-weight: 700;
 }
 
@@ -1088,64 +1132,80 @@ Page: Lojas
     box-shadow: 0px 4px 4px 0px #00000040;
     margin-right: 8px;
 }
-.users .user-details .colors{
+
+.users .user-details .colors {
     display: flex;
     align-items: center;
 }
+
 .users .user-details .colors .color1 {
     background: #8C2E1B;
 }
+
 .users .user-details .colors .color2 {
     background: #F5A548;
 }
+
 .users .user-details .colors .color3 {
     background: #F5EE48;
 }
+
 .users .user-details .colors .color4 {
     background: #BEF548;
 }
+
 .users .user-details .colors .color5 {
     background: #26825F;
 }
-.users .user-details .colors .color.active{
+
+.users .user-details .colors .color.active {
     height: 12px;
     opacity: 1;
 }
-.service-process{
+
+.service-process {
     display: flex;
 }
-.service-process .process{
+
+.service-process .process {
     display: flex;
     align-items: center;
     margin: 32px 0;
     margin-right: 45px;
 }
-.service-process .process h6{
+
+.service-process .process h6 {
     font-size: 16px;
     color: #160E2B;
     margin: 0;
     margin-left: 18px;
 }
+
 .where-we-are {
     display: flex;
 }
 
-.where-we-are .me , .where-we-are .others {
+.where-we-are .me,
+.where-we-are .others {
     display: flex;
     align-items: center;
 }
+
 .where-we-are .me {
     margin-right: 40px;
 }
-.where-we-are .me h6, .where-we-are .others h6  {
+
+.where-we-are .me h6,
+.where-we-are .others h6 {
     margin-right: 16px;
 }
 
 
-.pagination{
+.pagination {
     justify-content: center;
 }
-.pagination li a{
+
+.pagination li a {
     border: none;
     font-size: 16px;
     color: var(--black);
