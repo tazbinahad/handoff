@@ -98,7 +98,13 @@ Page: footer
 .top-header .top-header-content .top-share-icon a {
     padding-right: 8px;
 }
-
+.top-header .top-header-content .top-share-icon a i{
+    font-size: 20px;
+    color: var(--primary);
+}
+.top-header .top-header-content .top-share-icon a:hover > i{
+    color: #565656;
+}
 .top-header .top-header-content .gretings {
     display: flex;
     align-items: center;
@@ -342,23 +348,24 @@ span.search-icon {
 
 .single-product .on-hover {
     position: absolute;
-    bottom: -25%;
+    top: unset !important;
+    bottom: -25% !important;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px 10px;
     background: rgba(255, 255, 255, 0.733);
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden !important;
+    opacity: 0 !important;
     transition: .5s ease-in-out all;
     z-index: 1;
 }
 
 .single-product:hover>.product-image .on-hover {
-    bottom: 0;
-    visibility: visible;
-    opacity: 1;
+    bottom: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .on-hover .text p {
@@ -1295,4 +1302,11 @@ Page: Lojas
     font-size: 12px;
     color: var(--black);
     padding: 10px 0;
+}
+.bottom-footer .social-share a i{
+    color: var(--primary);
+    font-size: 43px;
+}
+.bottom-footer .social-share a:hover i{
+    color: #565656;
 }

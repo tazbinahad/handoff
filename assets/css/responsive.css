@@ -56,7 +56,7 @@
 @media screen and (max-width: 1024px) {
     /* Header */
     .header-right-content, .header-right-content .icon-list>div{
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
     .header-right-content, .header-right-content .icon-list>div {
         margin-left: 0;
